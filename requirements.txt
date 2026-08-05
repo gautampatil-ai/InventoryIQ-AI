@@ -5,4 +5,5 @@ pandas
 numpy
 joblib
 gunicorn
-starlette<0.40.0
+streamlit
+starlette
