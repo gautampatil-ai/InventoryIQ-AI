@@ -47,6 +47,8 @@ def load_pipeline():
         model = joblib.load(MODEL_PATH)
         return model, True
     except Exception as e:
+        # Show actual error details on the UI for debugging
+        st.error(f"❌ Error loading model file '{MODEL_PATH}': {e}")
         return None, False
 
 model, model_loaded = load_pipeline()
